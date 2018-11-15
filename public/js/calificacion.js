@@ -78,7 +78,7 @@
         },
         dataType: "JSON",
         success: function (jsonStr) {
-        	demo = jsonStr;
+
            $('#myModal').modal('toggle');
 
            $('select').val('');
