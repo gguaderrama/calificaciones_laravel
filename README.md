@@ -8,6 +8,10 @@ Desarrollado en laravel 5.7 , Boostrap , jquery
 3- Ejecutar php artisan serve para correr el proyecto
 4 - php artisan route:list Para visualizar las rutas 
 5- Importar el .sql
+6- Ejecutar 
+
+php artisan key:generate
+php artisan config:cache
 
 RUTAS 
 
