@@ -2,10 +2,12 @@
 CRUD calificaciones
 Desarrollado en laravel 5.7 , Boostrap , jquery
 
-1- Tener composer instalado
-2 - Git
+0- Ejecutar composer update
+1- Tener composer instalado GIT/COMPOSER
+2 - crear archivo .ENV
 3- Ejecutar php artisan serve para correr el proyecto
 4 - php artisan route:list Para visualizar las rutas 
+5- Importar el .sql
 
 RUTAS 
 
