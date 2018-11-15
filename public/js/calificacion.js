@@ -66,11 +66,11 @@
   			data_type = 'PUT';
   			url = "/calificaciones/"+$("[name='id_t_usuarios']").val();	       
 		}
-	  $.ajax({
+  	  $.ajax({
         url: url,
         type: data_type,
         data: {
-            "_token": "{{ csrf_token() }}",
+            "_token": $('meta[name="csrf-token"]').attr('content'),
             id_t_materias : $("[name='id_t_materias']").val(),
         	id_t_usuarios : $("[name='id_t_usuarios']").val(),
             calificacion : $("[name='calificacion']").val(),  
@@ -79,10 +79,8 @@
         dataType: "JSON",
         success: function (jsonStr) {
         	demo = jsonStr;
-
-
            $('#myModal').modal('toggle');
-           
+
            $('select').val('');
            $('input').val('');
           if(jsonStr.success == 'ok'){
